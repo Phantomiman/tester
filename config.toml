@@ -1,25 +1,48 @@
-[routing]
 [[routing.mint_config_list]]
-mint = "34HDZNbUkTyTrgYKy2ox43yp2f8PJ5hoM7xsrfNApump"
+mint = "4TBi66vi32S7J8X1A6eWfaLHYmUXu7CStcEmsJQdpump"
 pump_pool_list = [
-  "7USDHmdsFsJGsrvuYWvYHKejJBneCLVk8hdMWVvb7VqA",
+  "H9d3XHfvMGfoohydEpqh4w3mopnvjCRzE9VqaiHKdqs7",
 ]
 # This is the Raydium V4 AMM Pool, not CPMM/CLMM
 raydium_pool_list = [
-  "XXXXXX"
 ]
 # This is the Raydium CPMM
 raydium_cp_pool_list = [
-  "XXXXXX"
 ]
 meteora_dlmm_pool_list = [
-  "7h93PJheNPgaVAztMqeFszzkaP1pEdsZyE4n6H9KRVE9",
-  "3aRvsnLDyDevu9BvpiauGGQpwszXXqW6zLgxjMG57g2N",
-  "CX2SFVBn6kAWm7utL3ccW3F6B9q9sHLmPTikPfPG9oSS",
+  "4LqbPmPsF1nDVgCsxaPFiT6wE5HrnP7NjuxNyXj3yLTx",
+  "82f9FzCyRbfSTSckj9zoUn5gw2Z5qnfFWJ4Kipw3v8KC",
+  "J3C1DF9oioYNwhkoxtXo1stfuP4bXFNHHcfBRbezjEy"
 ]
 lookup_table_accounts = [
-  "AnrSWuNc4L4oj54W7g95YEaXfTS58FsSknZdynDqpUJd",
-  "q52amtQzHcXs2PA3c4Xqv1LRRZCbFMzd4CGHu1tHdp1"
+  "H1Sa9xHTajC3aFqKK1G8xLmMVUw2jhLdYocv8o7rcjmN",
+  "4sKLJ1Qoudh8PJyqBeuKocYdsZvxTcRShUt9aKqwhgvC",
+  "AxWbpnR6pbvwirkkAjsNZuhAKFYmubeU1cWUtmuEWkoZ",
+  "E2X6KRKpC9R3wstc1nf7eLVxEcGB8pzevfjGdWZ7XbPq"
+]
+process_delay = 400
+
+[[routing.mint_config_list]]
+mint = "4TBi66vi32S7J8X1A6eWfaLHYmUXu7CStcEmsJQdpump"
+pump_pool_list = [
+  "H9d3XHfvMGfoohydEpqh4w3mopnvjCRzE9VqaiHKdqs7",
+]
+# This is the Raydium V4 AMM Pool, not CPMM/CLMM
+raydium_pool_list = [
+]
+# This is the Raydium CPMM
+raydium_cp_pool_list = [
+]
+meteora_dlmm_pool_list = [
+  "4LqbPmPsF1nDVgCsxaPFiT6wE5HrnP7NjuxNyXj3yLTx",
+  "82f9FzCyRbfSTSckj9zoUn5gw2Z5qnfFWJ4Kipw3v8KC",
+  "J3C1DF9oioYNwhkoxtXo1stfuP4bXFNHHcfBRbezjEy"
+]
+lookup_table_accounts = [
+  "H1Sa9xHTajC3aFqKK1G8xLmMVUw2jhLdYocv8o7rcjmN",
+  "4sKLJ1Qoudh8PJyqBeuKocYdsZvxTcRShUt9aKqwhgvC",
+  "AxWbpnR6pbvwirkkAjsNZuhAKFYmubeU1cWUtmuEWkoZ",
+  "E2X6KRKpC9R3wstc1nf7eLVxEcGB8pzevfjGdWZ7XbPq"
 ]
 process_delay = 400
 
