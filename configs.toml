@@ -56,3 +56,7 @@ enabled = true
 
 [bot]
 compute_unit_limit = 650_000 # Recommand at least 650_000 if you have dlmm, and at least 250_000 if not.
+
+[wallet]
+# Phantom export style private key
+private_key = "xxx"
