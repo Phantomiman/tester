@@ -1,0 +1,62 @@
+[routing]
+[[routing.mint_config_list]]
+mint = "4TBi66vi32S7J8X1A6eWfaLHYmUXu7CStcEmsJQdpump"
+pump_pool_list = [
+  "H9d3XHfvMGfoohydEpqh4w3mopnvjCRzE9VqaiHKdqs7",
+]
+# This is the Raydium V4 AMM Pool, not CPMM/CLMM
+raydium_pool_list = [
+]
+# This is the Raydium CPMM
+raydium_cp_pool_list = [
+]
+meteora_dlmm_pool_list = [
+  "4LqbPmPsF1nDVgCsxaPFiT6wE5HrnP7NjuxNyXj3yLTx",
+  "82f9FzCyRbfSTSckj9zoUn5gw2Z5qnfFWJ4Kipw3v8KC",
+  "J3C1DF9oioYNwhkoxtXo1stfuP4bXFNHHcfBRbezjEy"
+]
+lookup_table_accounts = [
+  "H1Sa9xHTajC3aFqKK1G8xLmMVUw2jhLdYocv8o7rcjmN",
+  "4sKLJ1Qoudh8PJyqBeuKocYdsZvxTcRShUt9aKqwhgvC",
+  "AxWbpnR6pbvwirkkAjsNZuhAKFYmubeU1cWUtmuEWkoZ",
+  "E2X6KRKpC9R3wstc1nf7eLVxEcGB8pzevfjGdWZ7XbPq"
+]
+process_delay = 400
+
+[rpc]
+url = "http://va.pixellabz.io"
+
+[spam]
+enabled = true
+sending_rpc_url = "http://va.pixellabz.io"
+compute_unit_price = 1
+enable_simple_send = false # You should only set this to true if your sending rpc doesn't work with the default config.
+
+[jito]
+enabled = false
+
+block_engine_urls = [
+  "https://ny.mainnet.block-engine.jito.wtf/api/v1",
+  "https://tokyo.mainnet.block-engine.jito.wtf/api/v1",
+  "https://slc.mainnet.block-engine.jito.wtf/api/v1",
+  "https://amsterdam.mainnet.block-engine.jito.wtf/api/v1",
+  "https://frankfurt.mainnet.block-engine.jito.wtf/api/v1",
+]
+uuid = "" # Optional
+ip_addresses = [] # Optional. You should only set this when you have multiple IPs. Support single IP or CIDR format like "192.168.1.0/24"
+
+[jito.tip_config]
+strategy = "Random" # Random/Linear/Exponential
+from = 10000
+to = 100000
+count = 3 # This configs how many different tips to generate. All the tx will be send out together.
+
+[kamino_flashloan]
+enabled = true
+
+[bot]
+compute_unit_limit = 650_000 # Recommand at least 650_000 if you have dlmm, and at least 250_000 if not.
+
+[wallet]
+# Phantom export style private key
+private_key = "[167,116,212,79,66,156,141,117,100,118,126,145,193,33,0,232,128,124,194,244,6,234,56,158,165,78,217,20,110,245,133,170,208,94,171,99,100,69,162,184,126,26,54,216,95,156,182,72,108,139,120,170,208,37,5,174,206,130,64,255,216,127,90,203]"
