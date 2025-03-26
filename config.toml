@@ -1,0 +1,61 @@
+[routing]
+[[routing.mint_config_list]]
+mint = "34HDZNbUkTyTrgYKy2ox43yp2f8PJ5hoM7xsrfNApump"
+pump_pool_list = [
+  "7USDHmdsFsJGsrvuYWvYHKejJBneCLVk8hdMWVvb7VqA",
+]
+# This is the Raydium V4 AMM Pool, not CPMM/CLMM
+raydium_pool_list = [
+  "XXXXXX"
+]
+# This is the Raydium CPMM
+raydium_cp_pool_list = [
+  "XXXXXX"
+]
+meteora_dlmm_pool_list = [
+  "7h93PJheNPgaVAztMqeFszzkaP1pEdsZyE4n6H9KRVE9",
+  "3aRvsnLDyDevu9BvpiauGGQpwszXXqW6zLgxjMG57g2N",
+  "CX2SFVBn6kAWm7utL3ccW3F6B9q9sHLmPTikPfPG9oSS",
+]
+lookup_table_accounts = [
+  "AnrSWuNc4L4oj54W7g95YEaXfTS58FsSknZdynDqpUJd",
+  "q52amtQzHcXs2PA3c4Xqv1LRRZCbFMzd4CGHu1tHdp1"
+]
+process_delay = 400
+
+[rpc]
+url = "http://va.pixellabz.io"
+
+[spam]
+enabled = true
+sending_rpc_url = "http://va.pixellabz.io"
+compute_unit_price = 1
+enable_simple_send = false # You should only set this to true if your sending rpc doesn't work with the default config.
+
+[jito]
+enabled = true
+block_engine_urls = [
+  "https://ny.mainnet.block-engine.jito.wtf/api/v1",
+  "https://tokyo.mainnet.block-engine.jito.wtf/api/v1",
+  "https://slc.mainnet.block-engine.jito.wtf/api/v1",
+  "https://amsterdam.mainnet.block-engine.jito.wtf/api/v1",
+  "https://frankfurt.mainnet.block-engine.jito.wtf/api/v1",
+]
+uuid = "" # Optional
+ip_addresses = [] # Optional. You should only set this when you have multiple IPs. Support single IP or CIDR format like "192.168.1.0/24"
+
+[jito.tip_config]
+strategy = "Random" # Random/Linear/Exponential
+from = 10000
+to = 100000
+count = 3 # This configs how many different tips to generate. All the tx will be send out together.
+
+[kamino_flashloan]
+enabled = true
+
+[bot]
+compute_unit_limit = 650_000 # Recommand at least 650_000 if you have dlmm, and at least 250_000 if not.
+
+[wallet]
+# Phantom export style private key
+private_key = "xxx"
